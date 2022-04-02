@@ -1,0 +1,10 @@
+<h1>KobeGeek</h1>
+<h3>新規Tweet</h3>
+<%= form_for @tweet do |f| %>
+  <div class="field">
+    <%= f.label :body %>
+    <%= f.text_area :body, :size=>"50x10" %>
+  </div>
+  <%= f.submit "Tweetする" %>
+<% end %>
+<%= link_to "一覧に戻る", tweets_path %>
